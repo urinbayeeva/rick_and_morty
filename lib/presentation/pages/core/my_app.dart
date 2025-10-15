@@ -53,7 +53,7 @@ class MyApp extends StatelessWidget {
       child: OnUnFocusTap(
         child: MaterialApp(
           navigatorKey: alice.getNavigatorKey(),
-          debugShowCheckedModeBanner: kDebugMode,
+          debugShowCheckedModeBanner: false,
           builder: (context, child) {
             child = FlutterSmartDialog.init()(context, child);
             return FlavorBanner(child: child);
